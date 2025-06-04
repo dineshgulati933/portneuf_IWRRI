@@ -1,0 +1,8 @@
+xarray
+geopandas
+shapely
+rioxarray
+requests
+python-dateutil
+affine
+glob2
