@@ -28,6 +28,6 @@ unzip_nc_files(files, f"unzipped/wateryear_{year}")
 
 combine_band1_monthly_to_cube(
     folder="unzipped/wateryear_2016",
-    output_path=f"raw_water_years/{clim_var}_wy2016.nc",
+    output_path=f"raw_water_years/{clim_var}_wy{year}.nc",
     clim_var=clim_var
 )
