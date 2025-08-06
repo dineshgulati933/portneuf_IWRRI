@@ -67,6 +67,12 @@ Located in `analysis/`:
 
 *This folder contains comprehensive analyses at the HUC12 level within the Portneuf watershed. It includes all relevant datasets, their preprocessing workflows, and detailed analytical scripts for trend detection, statistical summaries, and visualization.*
 
+<p align="center">
+  <img src="images/huc12.png" width="600" alt="HUC12 Subwatersheds Map"><br>
+  <em>Map of HUC12 regions used for analysis</em>
+</p>
+
+
 | Folders | Description |
 |--------|-------------|
 | `cdl` | USDA CDL data merging, preprocessing and trend analysis (Mann-Kendall, Sen's Slope) along with graphics |
@@ -92,10 +98,13 @@ Located in `analysis/`:
 
 ## Jupyter Notebooks
 
-Located in `notebooks/` for interactive exploration of:
-- Zonal statistics visualization
-- Correlation between ET and land cover
-- ET change over time
+Located in `analysis2/` 
+
+<p align="center">
+  <img src="images\pneuf_3p.png" width="500" alt="Analysis 2 Subwatersheds"><br>
+  <em>Figure: Division of watershed into three UIDs (101, 102, 103) for targeted zonal analysis</em>
+</p>
+
 
 ---
 
@@ -103,8 +112,8 @@ Located in `notebooks/` for interactive exploration of:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/project-repo.git
-   cd project-repo
+   git clone https://github.com/dineshgulati933/portneuf_IWRRI.git
+   cd portneuf_IWARRI
    ```
 
 2. **Authenticate and initialize Earth Engine** (for Python API):
@@ -114,12 +123,7 @@ Located in `notebooks/` for interactive exploration of:
    ee.Initialize()
    ```
 
-3. **Install required Python packages**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Run scripts** as needed from the appropriate folders.
+3. **Run scripts** as needed from the appropriate folders.
 
 ---
 
