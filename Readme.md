@@ -18,7 +18,7 @@ This repository contains scripts and tools developed for collecting, processing,
 ├── earthengine-js/         # JavaScript GEE scripts (linked below)
 ├── ee_python/              # Python API scripts for GEE
 ├── prism_code/             # Python script to download prism data using api request
-├── notebooks/              # Jupyter Notebooks for exploration or summary
+├── analysis/              # Jupyter Notebooks for exploration or analysis on HUC12 level
 ├── data/                   # (Optional) Contains exported sample files or metadata
 └── README.md
 ```
@@ -65,13 +65,30 @@ Located in `ee_python/`:
 
 Located in `analysis/`:
 
-| Script | Description |
-|--------|-------------|
-| `et_trend_analysis.py` | Performs trend analysis (Mann-Kendall, Sen's Slope) |
-| `cropwise_et_summary.py` | Summarizes ET by crop classes from CDL |
-| `visualize_map.py` | Generates maps from raster data using matplotlib/cartopy |
+*This folder contains comprehensive analyses at the HUC12 level within the Portneuf watershed. It includes all relevant datasets, their preprocessing workflows, and detailed analytical scripts for trend detection, statistical summaries, and visualization.*
 
+| Folders | Description |
+|--------|-------------|
+| `cdl` | USDA CDL data merging, preprocessing and trend analysis (Mann-Kendall, Sen's Slope) along with graphics |
+| `gridmet` | gridMET precip, temp, eto, and etr data , preprocessing, stats and trend analysis (Mann-Kendall, Sen's Slope) along with graphics |
+| `IRR` | IrrMapper data merging and initial analysis along with graphics |
+| `nlcd` | NLCD data merging and initial analysis along with graphics |
+| `npp` | Landsat NPP data merging and initial analysis along with graphics |
+| `portneuf_aoi` | Dissolved Portneuf shapefile |
+| `portneuf_huc12` | Portneuf shapefile with HUC12 features |
+| `utils` | Contains modular Python utility scripts offering reusable functions for statistical trend analysis (Sen's Slope, Mann-Kendall tests), data preprocessing, and automated generation of high-quality, publication-ready plots. These utilities streamline workflows and are leveraged across multiple notebooks for consistency and efficiency |
 ---
+
+> **Note:**  
+> If you are using the `trend_sen` module (which provides functions for calculating Sen's Slope, generating plots, etc.), you may need to update the import path based on your local directory structure. This is typically done by modifying the Python `sys.path` using the `os` and `sys` libraries to ensure your scripts can locate and import custom modules.  
+>  
+> Example:
+> ```python
+> import os
+> import sys
+> sys.path.append(os.path.abspath('path/to/your/module'))
+> import trend_sen
+> ```
 
 ## Jupyter Notebooks
 
