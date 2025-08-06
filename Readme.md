@@ -10,7 +10,7 @@ This repository contains scripts and tools developed for collecting, processing,
 ```
 /
 ├── earthengine-js/         # JavaScript GEE scripts (linked below)
-├── earthengine-python/     # Python API scripts for GEE
+├── ee_python/     # Python API scripts for GEE
 ├── analysis/               # Python scripts for post-processing and analysis
 ├── notebooks/              # Jupyter Notebooks for exploration or summary
 ├── data/                   # (Optional) Contains exported sample files or metadata
@@ -23,7 +23,7 @@ This repository contains scripts and tools developed for collecting, processing,
 
 > All JavaScript scripts are hosted in the shared GEE repository below:
 
-- 🔗 **[Main Earth Engine Repo](https://code.earthengine.google.com/?accept_repo=users/dineshgulati333/portneuf)**
+- **[Main Earth Engine Repo](https://code.earthengine.google.com/?accept_repo=users/dineshgulati333/portneuf)**
 
 ### Key Scripts:
 - [AOI](https://code.earthengine.google.com/04ed0ef0d846c984ba70f92b09c098e3?noload=true)
@@ -39,14 +39,14 @@ This repository contains scripts and tools developed for collecting, processing,
 
 ## Earth Engine Python API Scripts
 
-Located in `earthengine-python/`:
+Located in `ee_python/`:
 
 | Script | Description |
 |--------|-------------|
-| `get_et_gridmet.py` | Extracts GridMET ET data using GEE API |
-| `get_cdl_by_year.py` | Downloads CDL rasters for specific years |
-| `huc_zonal_stats.py` | Computes zonal statistics over HUC8/HUC12 |
-| `merge_gee_exports.py` | Merges multiple CSV exports and cleans data |
+| `Pneuf_OpenET_HUC12.ipynb` | Extract all OpenET models including ensemble for multiple years. It will apply reducer to each HUC12 feature to calculate mean, 25th, median, 75th in the region |
+| `Pneuf_NLCD_huc12.ipynb` | Extract the NLCD landcover data for a specific region and export it as CSV for individual years in Drive |
+| `Pneuf_CDL_huc12.ipynb` | Extract the USDA CDL landcover data for a specific region and export it as CSV for individual years in Drive |
+| `Pneuf_IrrMAPPER_huc12.ipynb` | Extract irrigated area within each HUC12 for multiple years using IrrMapper dataset |
 
 ---
 
