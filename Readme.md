@@ -1,6 +1,7 @@
-# 🌱 Earth Engine Weather & Crop Analysis Toolkit
+# 🌱 Portneuf River Watershed – Initial Hydrologic Analysis 
 
-This repository contains scripts and tools developed during Summer 2025 for collecting, processing, and analyzing environmental data using **Google Earth Engine (GEE)** and **Python**. The focus is on extracting weather, evapotranspiration (ET), and crop/land cover datasets like **CDL** and **NLCD**.
+This repository contains scripts and tools developed for collecting, processing, and analyzing hydrological data using **Google Earth Engine (GEE)** and **Python**. The focus is on extracting weather (**gridMET**, **PRISM**),
+ evapotranspiration (**gridMET**, **OpenET**), and crop/land cover datasets (**CDL** and **NLCD**).
 
 ---
 
@@ -22,14 +23,17 @@ This repository contains scripts and tools developed during Summer 2025 for coll
 
 > All JavaScript scripts are hosted in the shared GEE repository below:
 
-- 🔗 **[Main Earth Engine Repo](https://code.earthengine.google.com/?repo=users/yourusername/projectname)**
+- 🔗 **[Main Earth Engine Repo](https://code.earthengine.google.com/?accept_repo=users/dineshgulati333/portneuf)**
 
 ### Key Scripts:
-- [ET Monthly Extractor](https://code.earthengine.google.com/INSERT_LINK)  
-- [CDL Clipping & Export](https://code.earthengine.google.com/INSERT_LINK)  
-- [Weather Stats by Region (HUC8/County)](https://code.earthengine.google.com/INSERT_LINK)
-
-> _Replace the links with actual shared script links._
+- [AOI](https://code.earthengine.google.com/04ed0ef0d846c984ba70f92b09c098e3?noload=true)
+- [DEM](https://code.earthengine.google.com/8a4f83eb51d3816680a5d69b3a242877?noload=true)
+- [NLCD_raster](https://code.earthengine.google.com/a3fe2b54555fdb5171df1536538c22f5?noload=true)
+- [PRISM_HUC12](https://code.earthengine.google.com/3a589bef56fe00c7932df5b1ae6cf2b7?noload=true)
+- [gridMET_HUC12](https://code.earthengine.google.com/3a589bef56fe00c7932df5b1ae6cf2b7?noload=true)
+- [gridMET_3P_mask](https://code.earthengine.google.com/c6cb7eb3731cf645e1a50812a79e407a?noload=true)  
+- [twave_gmet](https://code.earthengine.google.com/eb3b75716e7bd6e2085547a199352331?noload=true)  
+- [twave_gmet_cl_mask](https://code.earthengine.google.com/9bbdddda99ec19199ddee9972446449f?noload=true)
 
 ---
 
@@ -107,8 +111,8 @@ Summer 2025
 
 ---
 
-## 📬 Contact
+## Contact
 
 For questions:  
- gula7530@vandals.uidaho.edu 
- [LinkedIn](https://www.linkedin.com/in/dinesh-gulati-120779149/)
+[Email](mailto:gula7530@vandals.uidaho.edu)  
+[LinkedIn](https://www.linkedin.com/in/dinesh-gulati-120779149/)
