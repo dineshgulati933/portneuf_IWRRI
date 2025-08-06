@@ -80,6 +80,7 @@ Located in `analysis/`:
 | `IRR` | IrrMapper data merging and initial analysis along with graphics |
 | `nlcd` | NLCD data merging and initial analysis along with graphics |
 | `npp` | Landsat NPP data merging and initial analysis along with graphics |
+| `openet` | OpenET data merging and initial analysis along with graphics. Also include dataset of each individual model |
 | `portneuf_aoi` | Dissolved Portneuf shapefile |
 | `portneuf_huc12` | Portneuf shapefile with HUC12 features |
 | `utils` | Contains modular Python utility scripts offering reusable functions for statistical trend analysis (Sen's Slope, Mann-Kendall tests), data preprocessing, and automated generation of high-quality, publication-ready plots. These utilities streamline workflows and are leveraged across multiple notebooks for consistency and efficiency |
@@ -96,16 +97,23 @@ Located in `analysis/`:
 > import trend_sen
 > ```
 
-## Jupyter Notebooks
 
-Located in `analysis2/` 
+Located in `analysis2/`
+
+*This folder contains comprehensive analyses at the three subwatersheds within the Portneuf watershed. The other difference is each variable is further segregated into cultivated (cropland and pasture) and non-cultivated area based on NLCD layer (2005). It includes all relevant datasets, their preprocessing workflows, and detailed analytical scripts for trend detection, statistical summaries, and visualization.*
 
 <p align="center">
   <img src="images\pneuf_3p.png" width="500" alt="Analysis 2 Subwatersheds"><br>
-  <em>Figure: Division of watershed into three UIDs (101, 102, 103) for targeted zonal analysis</em>
+  <em>Division of watershed into three UIDs (101, 102, 103) for targeted zonal analysis</em>
 </p>
 
-
+| Folders | Description |
+|--------|-------------|
+| `gridmet` | gridMET precip, temp, eto, and etr data , preprocessing, stats and trend analysis (Mann-Kendall, Sen's Slope) along with graphics |
+| `nlcd` | NLCD data merging and initial analysis along with graphics |
+| `nlcd_raster` | Map code based on NLCD geotiff |
+| `openet` | OpenET data merging and initial analysis along with graphics based on landcover. Also include dataset of each individual model |
+| `shp` | Contains shapefile used in all the analysis. `portneuf3_clean` is the final shapefile |
 ---
 
 ## Getting Started
