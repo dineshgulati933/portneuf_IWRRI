@@ -5,6 +5,12 @@ This repository contains scripts and tools developed for collecting, processing,
 
 ---
 
+<p align="center">
+  <img src="images\nlcd_2005.png" width="600" alt="ET Trend Map"><br>
+  <em>Portneuf Landcover for year 2005 </em>
+</p>
+
+
 ## Repository Structure
 
 ```
@@ -41,12 +47,17 @@ This repository contains scripts and tools developed for collecting, processing,
 
 Located in `ee_python/`:
 
+*You can also launch each notebook directly in Google Colab by clicking its name below.*
+
 | Script | Description |
 |--------|-------------|
 | [`Pneuf_OpenET_HUC12.ipynb`](https://colab.research.google.com/drive/1P96ucjloKNYB6zGVJaOf-NPjfFCZBORC?usp=sharing) | Extract all OpenET models including ensemble for multiple years. It will apply reducer to each HUC12 feature to calculate mean, 25th, median, 75th in the region |
 | [`Pneuf_NLCD_huc12.ipynb`](https://colab.research.google.com/drive/1SCJKQz_25yTdX0zxWWCqH2N4Dfagd9Qg?usp=sharing) | Extract the NLCD landcover data for a specific region and export it as CSV for individual years in Drive |
 | [`Pneuf_CDL_huc12.ipynb`](https://colab.research.google.com/drive/1HRpv_C9NJIPUmtUKI-l0NPDKljgI23zd?usp=sharing) | Extract the USDA CDL landcover data for a specific region and export it as CSV for individual years in Drive |
 | [`Pneuf_IrrMAPPER_huc12.ipynb`](https://colab.research.google.com/drive/1umnEEfXe8YjtBiTRnbxv9v5J67vKRzqD?usp=sharing) | Extract irrigated area within each HUC12 for multiple years using IrrMapper dataset |
+| [`Pneuf_NPP_huc12.ipynb`](https://colab.research.google.com/drive/1xvwzCJuDBCppItKz_jWiOy6CKvDXGZWc?usp=sharing) | Extract Landsat based NPP data for each HUC12 |
+| [`Pneuf_OpenET_3p_mask.ipynb`](https://colab.research.google.com/drive/1YCHq0dG1iboq9n3JBqeLjQbrg2BgnzQy?usp=sharing) | OpenET data modified for cultivated and non-cultivated scenarios based on NLCD 2005 LC mask and Portneuf with three sub watersheds |
+| [`Pneuf_NLCD_3P.ipynb`](https://colab.research.google.com/drive/1vbsMJZk1RnIRQLDA-EFD-M7qPdzH9BXk?usp=sharing) | Code modified to extract NLCD LC for three features within Portneuf |
 
 ---
 
