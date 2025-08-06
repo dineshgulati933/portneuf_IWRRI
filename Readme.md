@@ -16,8 +16,8 @@ This repository contains scripts and tools developed for collecting, processing,
 ```
 /
 ├── earthengine-js/         # JavaScript GEE scripts (linked below)
-├── ee_python/     # Python API scripts for GEE
-├── analysis/               # Python scripts for post-processing and analysis
+├── ee_python/              # Python API scripts for GEE
+├── prism_code/             # Python script to download prism data using api request
 ├── notebooks/              # Jupyter Notebooks for exploration or summary
 ├── data/                   # (Optional) Contains exported sample files or metadata
 └── README.md
@@ -116,8 +116,8 @@ Located in `notebooks/` for interactive exploration of:
 
 ## Credits
 
-Developed by **[Dinesh Gulati]**  
-Project under **[IWARRI]**, **[UOI]**  
+Developed by **Dinesh Gulati**  
+Project under **IWARRI**, **UOI**  
 Summer 2025
 
 ---
