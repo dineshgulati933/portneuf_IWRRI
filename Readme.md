@@ -18,8 +18,8 @@ This repository contains scripts and tools developed for collecting, processing,
 ├── earthengine-js/         # JavaScript GEE scripts (linked below)
 ├── ee_python/              # Python API scripts for GEE
 ├── prism_code/             # Python script to download prism data using api request
-├── analysis/              # Jupyter Notebooks for exploration or analysis on HUC12 level
-├── data/                   # (Optional) Contains exported sample files or metadata
+├── analysis/               # Jupyter Notebooks for exploration or analysis on HUC12 level
+├── analysis2/              # Jupyter notebook with analysis based on landcover and Portneuf watershed is divided into three subwatershed
 └── README.md
 ```
 
