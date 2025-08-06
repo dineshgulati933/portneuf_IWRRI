@@ -43,10 +43,10 @@ Located in `ee_python/`:
 
 | Script | Description |
 |--------|-------------|
-| `Pneuf_OpenET_HUC12.ipynb` | Extract all OpenET models including ensemble for multiple years. It will apply reducer to each HUC12 feature to calculate mean, 25th, median, 75th in the region |
-| `Pneuf_NLCD_huc12.ipynb` | Extract the NLCD landcover data for a specific region and export it as CSV for individual years in Drive |
-| `Pneuf_CDL_huc12.ipynb` | Extract the USDA CDL landcover data for a specific region and export it as CSV for individual years in Drive |
-| `Pneuf_IrrMAPPER_huc12.ipynb` | Extract irrigated area within each HUC12 for multiple years using IrrMapper dataset |
+| (`Pneuf_OpenET_HUC12.ipynb`)[https://colab.research.google.com/drive/1P96ucjloKNYB6zGVJaOf-NPjfFCZBORC?usp=sharing] | Extract all OpenET models including ensemble for multiple years. It will apply reducer to each HUC12 feature to calculate mean, 25th, median, 75th in the region |
+| (`Pneuf_NLCD_huc12.ipynb`)[https://colab.research.google.com/drive/1SCJKQz_25yTdX0zxWWCqH2N4Dfagd9Qg?usp=sharing] | Extract the NLCD landcover data for a specific region and export it as CSV for individual years in Drive |
+| (`Pneuf_CDL_huc12.ipynb`)[https://colab.research.google.com/drive/1HRpv_C9NJIPUmtUKI-l0NPDKljgI23zd?usp=sharing] | Extract the USDA CDL landcover data for a specific region and export it as CSV for individual years in Drive |
+| (`Pneuf_IrrMAPPER_huc12.ipynb`)[https://colab.research.google.com/drive/1umnEEfXe8YjtBiTRnbxv9v5J67vKRzqD?usp=sharing] | Extract irrigated area within each HUC12 for multiple years using IrrMapper dataset |
 
 ---
 
