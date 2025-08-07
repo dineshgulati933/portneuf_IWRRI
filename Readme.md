@@ -15,7 +15,7 @@ This repository contains scripts and tools developed for collecting, processing,
 
 ```
 /
-├── earthengine-js/         # JavaScript GEE scripts (linked below)
+├── earthengine-js/         # JavaScript GEE scripts (linked below and has no folder in repo)
 ├── ee_python/              # Python API scripts for GEE
 ├── prism_code/             # Python script to download prism data using api request
 ├── analysis/               # Jupyter Notebooks for exploration or analysis on HUC12 level
