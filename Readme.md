@@ -146,7 +146,7 @@ Located in `analysis2/`
 ## Credits
 
 Developed by **Dinesh Gulati**  
-Project under **IWARRI**, **UOI**  
+Project under **IWRRI**, **UOI**  
 Summer 2025
 
 ---
